@@ -6,28 +6,15 @@ public class CadastroConsultaDeNotas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String nomeAluno1 = "";
-        String nomeAluno2 = "";
-        String nomeAluno3 = "";
-        String nomeAluno4 = "";
-        String nomeAluno5 = "";
+        String[] nomeDosAlunos = new String[5];
 
-        double notaAluno1A = 0;
-        double notaAluno1B = 0;
-        double notaAluno2A = 0;
-        double notaAluno2B = 0;
-        double notaAluno3A = 0;
-        double notaAluno3B = 0;
-        double notaAluno4A = 0;
-        double notaAluno4B = 0;
-        double notaAluno5A = 0;
-        double notaAluno5B = 0;
+        double[] notasDoAluno1 = new double[2];
+        double[] notasDoAluno2 = new double[2];
+        double[] notasDoAluno3 = new double[2];
+        double[] notasDoAluno4 = new double[2];
+        double[] notasDoAluno5 = new double[2];
 
-        double mediaAluno1 = 0;
-        double mediaAluno2 = 0;
-        double mediaAluno3 = 0;
-        double mediaAluno4 = 0;
-        double mediaAluno5 = 0;
+        double[] mediaDosAlunos = new double[5];
 
         int totalAlunos = 0;
         int alunosAprovados = 0;
@@ -50,70 +37,70 @@ public class CadastroConsultaDeNotas {
                         case 0:
                             System.out.println("Cadastro de aluno...");
                             System.out.print("Digite o nome do aluno: ");
-                            nomeAluno1 = scanner.nextLine();
+                            nomeDosAlunos[0] = scanner.nextLine();
                             System.out.print("Digite a primeira nota: ");
-                            notaAluno1A = scanner.nextDouble();
+                            notasDoAluno1[0] = scanner.nextDouble();
                             System.out.print("Digite a segunda nota: ");
-                            notaAluno1B = scanner.nextDouble();
-                            mediaAluno1 = (notaAluno1A + notaAluno1B) / 2;
+                            notasDoAluno1[1] = scanner.nextDouble();
+                            mediaDosAlunos[0] = (notasDoAluno1[0] + notasDoAluno1[1]) / 2;
                             totalAlunos++;
-                            if (mediaAluno1 >= 7) {
+                            if (mediaDosAlunos[0] >= 7) {
                                 alunosAprovados++;
                             }
                             break;
                         case 1:
                             System.out.println("Cadastro de aluno...");
                             System.out.print("Digite o nome do aluno: ");
-                            nomeAluno2 = scanner.nextLine();
+                            nomeDosAlunos[1] = scanner.nextLine();
                             System.out.print("Digite a primeira nota: ");
-                            notaAluno2A = scanner.nextDouble();
+                            notasDoAluno2[0] = scanner.nextDouble();
                             System.out.print("Digite a segunda nota: ");
-                            notaAluno2B = scanner.nextDouble();
-                            mediaAluno2 = (notaAluno2A + notaAluno2B) / 2;
+                            notasDoAluno2[1] = scanner.nextDouble();
+                            mediaDosAlunos[1] = (notasDoAluno2[0] + notasDoAluno2[1]) / 2;
                             totalAlunos++;
-                            if (mediaAluno2 >= 7) {
+                            if (mediaDosAlunos[1] >= 7) {
                                 alunosAprovados++;
                             }
                             break;
                         case 2:
                             System.out.println("Cadastro de aluno...");
                             System.out.print("Digite o nome do aluno: ");
-                            nomeAluno3 = scanner.nextLine();
+                            nomeDosAlunos[2] = scanner.nextLine();
                             System.out.print("Digite a primeira nota: ");
-                            notaAluno3A = scanner.nextDouble();
+                            notasDoAluno3[0] = scanner.nextDouble();
                             System.out.print("Digite a segunda nota: ");
-                            notaAluno3B = scanner.nextDouble();
-                            mediaAluno3 = (notaAluno3A + notaAluno3B) / 2;
+                            notasDoAluno3[1] = scanner.nextDouble();
+                            mediaDosAlunos[2] = (notasDoAluno3[0] + notasDoAluno3[1]) / 2;
                             totalAlunos++;
-                            if (mediaAluno3 >= 7) {
+                            if (mediaDosAlunos[2] >= 7) {
                                 alunosAprovados++;
                             }
                             break;
                         case 3:
                             System.out.println("Cadastro de aluno...");
                             System.out.print("Digite o nome do aluno: ");
-                            nomeAluno4 = scanner.nextLine();
+                            nomeDosAlunos[3] = scanner.nextLine();
                             System.out.print("Digite a primeira nota: ");
-                            notaAluno4A = scanner.nextDouble();
+                            notasDoAluno4[0] = scanner.nextDouble();
                             System.out.print("Digite a segunda nota: ");
-                            notaAluno4B = scanner.nextDouble();
-                            mediaAluno4 = (notaAluno4A + notaAluno4B) / 2;
+                            notasDoAluno4[1] = scanner.nextDouble();
+                            mediaDosAlunos[3] = (notasDoAluno4[0] + notasDoAluno4[1]) / 2;
                             totalAlunos++;
-                            if (mediaAluno4 >= 7) {
+                            if (mediaDosAlunos[3] >= 7) {
                                 alunosAprovados++;
                             }
                             break;
                         case 4:
                             System.out.println("Cadastro de aluno...");
                             System.out.print("Digite o nome do aluno: ");
-                            nomeAluno5 = scanner.nextLine();
+                            nomeDosAlunos[4] = scanner.nextLine();
                             System.out.print("Digite a primeira nota: ");
-                            notaAluno5A = scanner.nextDouble();
+                            notasDoAluno5[0] = scanner.nextDouble();
                             System.out.print("Digite a segunda nota: ");
-                            notaAluno5B = scanner.nextDouble();
-                            mediaAluno5 = (notaAluno5A + notaAluno5B) / 2;
+                            notasDoAluno5[1] = scanner.nextDouble();
+                            mediaDosAlunos[4] = (notasDoAluno5[0] + notasDoAluno5[1]) / 2;
                             totalAlunos++;
-                            if (mediaAluno5 >= 7) {
+                            if (mediaDosAlunos[4] >= 7) {
                                 alunosAprovados++;
                             }
                             break;
@@ -132,44 +119,44 @@ public class CadastroConsultaDeNotas {
                             System.out.println("Nenhum aluno cadastrado.");
                             break;
                         case 1:
-                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno1, notaAluno1A, notaAluno1B, mediaAluno1 );
+                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[0], notasDoAluno1[0], notasDoAluno1[1], mediaDosAlunos[0] );
                             break;
                         case 2:
-                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno1, notaAluno1A, notaAluno1B, mediaAluno1 );
-                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno2, notaAluno2A, notaAluno2B, mediaAluno2 );
+                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[0], notasDoAluno1[0], notasDoAluno1[1], mediaDosAlunos[0] );
+                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[1], notasDoAluno2[0], notasDoAluno2[1], mediaDosAlunos[1] );
                             break;
                         case 3:
-                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno1, notaAluno1A, notaAluno1B, mediaAluno1 );
-                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno2, notaAluno2A, notaAluno2B, mediaAluno2 );
-                            System.out.printf("Aluno 3:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno3, notaAluno3A, notaAluno3B, mediaAluno3 );
+                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[0], notasDoAluno1[0], notasDoAluno1[1], mediaDosAlunos[0] );
+                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[1], notasDoAluno2[0], notasDoAluno2[1], mediaDosAlunos[1] );
+                            System.out.printf("Aluno 3:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[2], notasDoAluno3[0], notasDoAluno3[1], mediaDosAlunos[2] );
                             break;
                         case 4:
-                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno1, notaAluno1A, notaAluno1B, mediaAluno1 );
-                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno2, notaAluno2A, notaAluno2B, mediaAluno2 );
-                            System.out.printf("Aluno 3:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno3, notaAluno3A, notaAluno3B, mediaAluno3 );
-                            System.out.printf("Aluno 4:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno4, notaAluno4A, notaAluno4B, mediaAluno4 );
+                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[0], notasDoAluno1[0], notasDoAluno1[1], mediaDosAlunos[0] );
+                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[1], notasDoAluno2[0], notasDoAluno2[1], mediaDosAlunos[1] );
+                            System.out.printf("Aluno 3:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[2], notasDoAluno3[0], notasDoAluno3[1], mediaDosAlunos[2] );
+                            System.out.printf("Aluno 4:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[3], notasDoAluno4[0], notasDoAluno4[1], mediaDosAlunos[3] );
                             break;
                         case 5:
-                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno1, notaAluno1A, notaAluno1B, mediaAluno1 );
-                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno2, notaAluno2A, notaAluno2B, mediaAluno2 );
-                            System.out.printf("Aluno 3:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno3, notaAluno3A, notaAluno3B, mediaAluno3 );
-                            System.out.printf("Aluno 4:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno4, notaAluno4A, notaAluno4B, mediaAluno4 );
-                            System.out.printf("Aluno 5:\nNome: %s | Nota 1: %.2f | Nota 2: %.2f | Média: %.2f |\n",
-                                    nomeAluno5, notaAluno5A, notaAluno5B, mediaAluno5 );
+                            System.out.printf("Aluno 1:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[0], notasDoAluno1[0], notasDoAluno1[1], mediaDosAlunos[0] );
+                            System.out.printf("Aluno 2:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[1], notasDoAluno2[0], notasDoAluno2[1], mediaDosAlunos[1] );
+                            System.out.printf("Aluno 3:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[2], notasDoAluno3[0], notasDoAluno3[1], mediaDosAlunos[2] );
+                            System.out.printf("Aluno 4:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[3], notasDoAluno4[0], notasDoAluno4[1], mediaDosAlunos[3] );
+                            System.out.printf("Aluno 5:\nNome: %s | Nota 1: %.1f | Nota 2: %.1f | Média: %.1f |\n",
+                                    nomeDosAlunos[4], notasDoAluno5[0], notasDoAluno5[1], mediaDosAlunos[4] );
                             break;
                     }
                     System.out.println("_____________________________________________________________");
